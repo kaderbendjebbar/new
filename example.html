@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        table,td{
+            border:1px solid black
+
+        }
+        th{
+            border:3px solid red
+        }
+    </style>
+    <body>
+        <h2>javascript HTML DOM</h2>
+        <p> How to add a new element to HTML DOM</p>
+        <table>
+            <th>
+             <p id="p0">une table</p>
+            </th>
+            <tbody id="ttbody">
+               
+                    <tr><td>
+                    <p id="p1">Introduction</p>
+                    </td></tr>
+                   
+                     
+                    <tr><td>
+                    <p id="p2">Texte</p>
+                    </td></tr>
+                
+                 
+                    <tr><td>
+                      <p id="p3">La suite du Texte</p>
+                    </td></tr>
+               
+            </tbody>
+        </table>
+       
+        <script>
+            var para = document.createElement("tr")
+            const ttd = document.createElement("td")
+            const node = document.createTextNode("La fin du texte")
+            ttd.appendChild(node)
+            para.appendChild(ttd)
+
+            const element = document.getElementById("ttbody")
+            const child = document.getElementById("p2")
+            const  parent1 = child.parentNode
+            const parent2 = parent1.parentNode
+            console.log("parent1=", parent1)
+            console.log("parent2=", parent2)
+            parent2.parentNode.insertBefore(para,parent1.parentNode)
+        </script>
+    
+
+    </body>
+</html>
