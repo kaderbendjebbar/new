@@ -3,7 +3,7 @@ if (!localStorage.getItem("counter")) {
 }
 
 let counter = localStorage.getItem("counter");
-//document.querySelector("#counter").innerHTML = counter;
+document.querySelector("#counter").innerHTML = counter;
 //document.addEventListener("DOMContentLoaded", () => {
 
 //document.querySelector("button").onclick = () => {
