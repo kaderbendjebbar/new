@@ -561,7 +561,7 @@ function addElectricite(Categorie) {
     document.querySelector("#QE").placeholder = "Quantité  Electricité";
     document.querySelector("#QElect").placeholder = "Quantité Eléctricité";
     // createButton();
-    insertElement();
+   // insertElement();
 
     console.log("yes");
   } else {
