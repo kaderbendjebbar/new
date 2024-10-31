@@ -766,7 +766,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#timbre").value = timbreS;
     document.querySelector("#MontantEspece").value = TotalEspeceS;
 
-    alongelist();
+   // alongelist();
     return false;
   };
 });
