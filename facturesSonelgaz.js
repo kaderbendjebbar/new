@@ -581,9 +581,9 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   document.querySelector("form").onsubmit = () => {
-    counter++;
-    document.querySelector("#counter").innerHTML = counter;
-    localStorage.setItem("counter", counter);
+   // counter++;
+   // document.querySelector("#counter").innerHTML = counter;
+   // localStorage.setItem("counter", counter);
 
     const QElect = document.querySelector("#QElect").value;
     const QElectJ = document.querySelector("#QElectJ").value;
